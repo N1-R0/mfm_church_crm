@@ -111,3 +111,4 @@ The container filesystem is intentionally not used for persistent data. PostgreS
 - Use a durable queue service for asynchronous messaging. The Vercel configuration intentionally uses synchronous jobs.
 
 See `docs/data-model.md`, `docs/production-checklist.md`, and `docs/verification.md` for implementation detail.
+"# mfm_church_crm" 
