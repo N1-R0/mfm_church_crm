@@ -1,5 +1,5 @@
-import type {ReactNode,InputHTMLAttributes,SelectHTMLAttributes,TextareaHTMLAttributes} from 'react';
-export function Card({children,className=''}:{children:ReactNode;className?:string}){return <section className={`card ${className}`}>{children}</section>}
+import type {CSSProperties,ReactNode,InputHTMLAttributes,SelectHTMLAttributes,TextareaHTMLAttributes} from 'react';
+export function Card({children,className='',style}:{children:ReactNode;className?:string;style?:CSSProperties}){return <section className={`card ${className}`} style={style}>{children}</section>}
 export function Badge({children,tone='default'}:{children:ReactNode;tone?:'default'|'success'|'warning'|'muted'|'danger'}){return <span className={`badge badge-${tone}`}>{children}</span>}
 export function Field({label,error,children,hint}:{label:string;error?:string;children:ReactNode;hint?:string}){return <label className="field"><span>{label}</span>{children}{hint&&<small>{hint}</small>}{error&&<small className="error">{error}</small>}</label>}
 export function Input(p:InputHTMLAttributes<HTMLInputElement>){return <input {...p} className={`input ${p.className??''}`}/>}

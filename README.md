@@ -1,4 +1,4 @@
-# Shepherd — Church CRM
+# MFM Youth Church CRM
 
 A deployable Laravel church relationship management application based on the supplied Church CRM prototype and its ten-entity data model.
 

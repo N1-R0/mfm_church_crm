@@ -1,4 +1,4 @@
 <?php
 return [
-    'donations' => env('FEATURE_DONATIONS', false),
+    'donations' => (bool) env('FEATURE_DONATIONS', env('FEATURE_DONATION', false)),
 ];
